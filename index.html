@@ -1,6 +1,28 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"></head>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    </head>
     <body>
-        
+        <div class="container">
+            <div>
+                <h3>HOME</h3>
+                <h2 id="home-score" class="score">0</h2>
+                <button id="home-score-1" onclick="increasehome1()">+1</button>
+                <button id="home-score-2" onclick="increasehome2()">+2</button>
+                <button id="home-score-3" onclick="increasehome3()">+3</button> 
+            </div>
+            <div>
+                <h3>GUEST</h3>
+                <h2 id="guest-score" class="score">0</h2>
+                <button id="guest-score-1" onclick="increaseguest1()">+1</button>
+                <button id="guest-score-2" onclick="increaseguest2()">+2</button>
+                <button id="guest-score-3" onclick="increaseguest3()">+3</button>
+            </div>
+        </div>
+          <button id="reset" onclick="reset()">Reset</button>
+        <script src="index.js"></script>
     </body>
 </html>
